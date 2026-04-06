@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AD Safety Joint Lab — 自动驾驶安全联合实验室</title>
+  <meta name="description" content="自动驾驶安全联合实验室，吉林大学汽车工程学院。AD Safety Joint Lab, School of Automotive Engineering, Jilin University.">
+  <link rel="stylesheet" href="assets/style.css?v=3">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔬</text></svg>">
+</head>
+<body>
+
+<!-- Language Toggle -->
+<button class="lang-toggle" id="langBtn" onclick="toggleLang()">EN</button>
+
+<main class="container">
+
+  <!-- Back Link -->
+  <div style="padding-top: 24px;">
+    <a class="nav-back" href="https://autozyx.com">
+      ← <span class="cn">返回主页</span><span class="en">Back to Home</span>
+    </a>
+  </div>
+
+  <!-- Lab Header -->
+  <header class="lab-header">
+    <img src="assets/lab-logo.png" alt="AD Safety Joint Lab" class="lab-logo">
+  </header>
+
+  <!-- About -->
+  <section>
+    <h2 class="section-title">
+      <span class="cn">关于实验室</span>
+      <span class="en">About</span>
+    </h2>
+    <div class="about-text cn-block">
+      <p>自动驾驶安全联合实验室成立于2016年，隶属吉林大学汽车工程学院/汽车底盘集成与仿生全国重点实验室。实验室致力于桥接学术研究与产业实践，聚焦自动驾驶安全领域的核心挑战——从标准解读到工程落地，从理论方法到数据验证。</p>
+      <p>实验室的核心方法论是"场景驱动、数据驱动、标准对齐"。依托驭研科技建设的全球最大规模之一的航测自然驾驶数据集（750h+飞行时数、10.5M+轨迹），实验室构建了从场景提取、风险量化到安全标准落地的完整研究链条，覆盖ISO 21448（SOTIF）、ISO 26262（功能安全）和ISO 34502（场景框架）等核心标准。</p>
+      <p>实验室与国内外整车企业、零部件供应商、检测机构和标准化组织保持紧密合作，在 ISO、SAE、GB 等国际国家平台积极贡献，致力于让自动驾驶安全研究真正服务于产业需求。</p>
+    </div>
+    <div class="about-text en-block">
+      <p>The AD Safety Joint Lab was established in 2016, under the School of Automotive Engineering / State Key Laboratory of Automotive Chassis Integration and Bionics, Jilin University. The lab bridges academic research and industry practice, addressing core challenges in autonomous driving safety — from standards interpretation to engineering implementation, from theoretical methods to data-driven validation.</p>
+      <p>The lab's core methodology is scenario-driven, data-driven, and standards-aligned. Leveraging one of the world's largest aerial naturalistic driving datasets built by DRIVEResearch (750h+ flight hours, 10.5M+ trajectories), the lab has established a complete research pipeline from scenario extraction and risk quantification to safety standard implementation, covering ISO 21448 (SOTIF), ISO 26262 (Functional Safety), and ISO 34502 (Scenario Framework).</p>
+      <p>The lab maintains close collaborations with OEMs, suppliers, testing agencies, and standardization bodies worldwide, actively contributing through ISO, SAE, GB and other international and national platforms, with the mission of making AD safety research truly serve industry needs.</p>
+    </div>
+  </section>
+
+  <!-- Research Directions -->
+  <section>
+    <h2 class="section-title">
+      <span class="cn">研究方向</span>
+      <span class="en">Research Directions</span>
+    </h2>
+    <ul class="research-list cn-block">
+      <li>智能运载工具安全系统工程</li>
+      <li>智能汽车功能安全及预期功能安全</li>
+      <li>自动驾驶汽车多维驾乘性能（安全-高效-舒适）</li>
+      <li>中国驾驶员基础模型（DFM）构建</li>
+      <li>通用移动物理AI整机安全系统工程</li>
+    </ul>
+    <ul class="research-list en-block">
+      <li>Safety Systems Engineering for Intelligent Vehicles</li>
+      <li>Functional Safety &amp; SOTIF for Intelligent Vehicles</li>
+      <li>Multi-dimensional Driving Performance (Safety-Efficiency-Comfort)</li>
+      <li>Chinese Driver Foundation Model (DFM)</li>
+      <li>Safety Systems Engineering for General-purpose Mobile Physical AI</li>
+    </ul>
+  </section>
+
+  <!-- People -->
+  <section>
+    <h2 class="section-title">
+      <span class="cn">团队</span>
+      <span class="en">People</span>
+    </h2>
+
+    <!-- 3a. Faculty (PI) -->
+    <div class="people-section">
+      <h3 class="people-section-header">
+        <span class="cn">团队教师</span><span class="en">Faculty</span>
+      </h3>
+      <div class="pi-card">
+        <img class="avatar-large" src="assets/avatar.png?v=6" alt="Yuxin Zhang">
+        <div class="pi-info">
+          <h4><span class="cn">张玉新</span><span class="en">Yuxin Zhang</span></h4>
+          <div class="pi-title">
+            <span class="cn">团队负责人 · 副教授</span>
+            <span class="en">Lab Director · Associate Professor</span>
+          </div>
+          <a href="https://autozyx.com" target="_blank" rel="noopener">autozyx.com →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3b. Partner Faculty -->
+    <div class="people-section">
+      <h3 class="people-section-header">
+        <span class="cn">合作伙伴</span><span class="en">Partner Faculty</span>
+      </h3>
+      <div class="people-grid">
+        <a class="person-card" href="https://chengwang2018.github.io/chengwang.github.io/" target="_blank" rel="noopener">
+          <img class="person-avatar-img" src="assets/partners/wang-cheng.png" alt="王成">
+          <div class="person-name"><span class="cn">王成</span><span class="en">Cheng Wang</span></div>
+          <div class="person-role">
+            <span class="cn">自动驾驶安全 / 可信AI<br>赫瑞瓦特大学</span>
+            <span class="en">AD Safety / Trustworthy AI<br>Heriot-Watt University</span>
+          </div>
+        </a>
+        <a class="person-card" href="https://auto.jlu.edu.cn/info/1139/2397.htm" target="_blank" rel="noopener">
+          <img class="person-avatar-img" src="assets/partners/zhang-xinjie.png" alt="章新杰">
+          <div class="person-name"><span class="cn">章新杰</span><span class="en">Xinjie Zhang</span></div>
+          <div class="person-role">
+            <span class="cn">底盘动力学与控制<br>吉林大学</span>
+            <span class="en">Chassis Dynamics &amp; Control<br>Jilin University</span>
+          </div>
+        </a>
+        <a class="person-card" href="https://faculty.cau.edu.cn/cc/" target="_blank" rel="noopener">
+          <img class="person-avatar-img" src="assets/partners/chen-chao.png" alt="陈超">
+          <div class="person-name"><span class="cn">陈超</span><span class="en">Chao Chen</span></div>
+          <div class="person-role">
+            <span class="cn">智能农机可靠性<br>中国农业大学</span>
+            <span class="en">Smart Agri-Machinery Reliability<br>China Agricultural Univ.</span>
+          </div>
+        </a>
+        <a class="person-card" href="https://teachers.jlu.edu.cn/LiXuefei/zh_CN/index/47072/list/index.htm" target="_blank" rel="noopener">
+          <img class="person-avatar-img" src="assets/partners/li-xuefei.png" alt="李学飞">
+          <div class="person-name"><span class="cn">李学飞</span><span class="en">Xuefei Li</span></div>
+          <div class="person-role">
+            <span class="cn">工程车辆自动驾驶<br>吉林大学</span>
+            <span class="en">AD for Engineering Vehicles<br>Jilin University</span>
+          </div>
+        </a>
+        <a class="person-card" href="https://eie.cqu.edu.cn/info/1204/2586.htm" target="_blank" rel="noopener">
+          <img class="person-avatar-img" src="assets/partners/li-chuzhao.png" alt="李楚照">
+          <div class="person-name"><span class="cn">李楚照</span><span class="en">Chuzhao Li</span></div>
+          <div class="person-role">
+            <span class="cn">自动驾驶仿真测试 / SOTIF<br>重庆大学</span>
+            <span class="en">AD Simulation / SOTIF<br>Chongqing University</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- 3c. Current Students -->
+    <div class="people-section">
+      <h3 class="people-section-header">
+        <span class="cn">在读学生</span><span class="en">Current Students</span>
+      </h3>
+
+      <!-- PhD Row -->
+      <div class="student-row">
+        <div class="student-row-label">
+          <span class="cn">博士研究生</span><span class="en">PhD</span>
+        </div>
+        <div class="student-grid">
+          <div class="person-card">
+            <div class="person-avatar">王</div>
+            <div class="person-name"><span class="cn">王子煜</span><span class="en">Ziyu Wang</span></div>
+            <div class="person-role">2025</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Master Row -->
+      <div class="student-row">
+        <div class="student-row-label">
+          <span class="cn">硕士研究生</span><span class="en">Master</span>
+        </div>
+        <div class="student-grid">
+          <div class="person-card">
+            <div class="person-avatar">寇</div>
+            <div class="person-name"><span class="cn">寇洪瑞</span><span class="en">Hongrui Kou</span></div>
+            <div class="person-role">2023</div>
+          </div>
+          <div class="person-card">
+            <div class="person-avatar">崔</div>
+            <div class="person-name"><span class="cn">崔镇韬</span><span class="en">Zhentao Cui</span></div>
+            <div class="person-role">2024</div>
+          </div>
+          <div class="person-card">
+            <div class="person-avatar">杨</div>
+            <div class="person-name"><span class="cn">杨林</span><span class="en">Lin Yang</span></div>
+            <div class="person-role">2025</div>
+          </div>
+          <div class="person-card">
+            <div class="person-avatar">胡</div>
+            <div class="person-name"><span class="cn">胡双</span><span class="en">Shuang Hu</span></div>
+            <div class="person-role">2025</div>
+          </div>
+          <div class="person-card">
+            <div class="person-avatar">黄</div>
+            <div class="person-name"><span class="cn">黄振岩</span><span class="en">Zhenyan Huang</span></div>
+            <div class="person-role">2025</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Undergraduate Row -->
+      <div class="student-row">
+        <div class="student-row-label">
+          <span class="cn">本科生</span><span class="en">Undergraduate</span>
+        </div>
+        <div class="student-grid">
+          <div class="person-card">
+            <div class="person-avatar">陈</div>
+            <div class="person-name"><span class="cn">陈岩松</span><span class="en">Yansong Chen</span></div>
+            <div class="person-role">2022</div>
+          </div>
+          <div class="person-card">
+            <div class="person-avatar">王</div>
+            <div class="person-name"><span class="cn">王思健</span><span class="en">Sijian Wang</span></div>
+            <div class="person-role">2022</div>
+          </div>
+          <div class="person-card">
+            <div class="person-avatar">秦</div>
+            <div class="person-name"><span class="cn">秦偲</span><span class="en">Si Qin</span></div>
+            <div class="person-role">2022</div>
+          </div>
+          <div class="person-card">
+            <div class="person-avatar">赵</div>
+            <div class="person-name"><span class="cn">赵浩林</span><span class="en">Haolin Zhao</span></div>
+            <div class="person-role">2022</div>
+          </div>
+          <div class="person-card">
+            <div class="person-avatar">葛</div>
+            <div class="person-name"><span class="cn">葛万章</span><span class="en">Wanzhang Ge</span></div>
+            <div class="person-role">2022</div>
+          </div>
+          <div class="person-card">
+            <div class="person-avatar">郭</div>
+            <div class="person-name"><span class="cn">郭旭冉</span><span class="en">Xuran Guo</span></div>
+            <div class="person-role">2023</div>
+          </div>
+          <div class="person-card">
+            <div class="person-avatar">张</div>
+            <div class="person-name"><span class="cn">张子衿</span><span class="en">Zijin Zhang</span></div>
+            <div class="person-role">2023</div>
+          </div>
+          <div class="person-card">
+            <div class="person-avatar">易</div>
+            <div class="person-name"><span class="cn">易俊豪</span><span class="en">Junhao Yi</span></div>
+            <div class="person-role">2023</div>
+          </div>
+          <div class="person-card">
+            <div class="person-avatar">唐</div>
+            <div class="person-name"><span class="cn">唐鸿皓</span><span class="en">Honghao Tang</span></div>
+            <div class="person-role">2023</div>
+          </div>
+          <div class="person-card">
+            <div class="person-avatar">张</div>
+            <div class="person-name"><span class="cn">张雪</span><span class="en">Xue Zhang</span></div>
+            <div class="person-role">2023</div>
+          </div>
+          <div class="person-card">
+            <div class="person-avatar">顾</div>
+            <div class="person-name"><span class="cn">顾荣森</span><span class="en">Rongsen Gu</span></div>
+            <div class="person-role">2024</div>
+          </div>
+          <div class="person-card">
+            <div class="person-avatar">张</div>
+            <div class="person-name"><span class="cn">张家祥</span><span class="en">Jiaxiang Zhang</span></div>
+            <div class="person-role">2024</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3d. Alumni -->
+    <div class="people-section">
+      <h3 class="people-section-header">
+        <span class="cn">已毕业成员</span><span class="en">Alumni</span>
+      </h3>
+
+      <!-- Master Alumni -->
+      <div class="alumni-group">
+        <div class="alumni-group-label">
+          <span class="cn">硕士研究生</span><span class="en">Master</span>
+        </div>
+        <div class="cn-block">
+          <div class="alumni-item">成泉岳<span class="year">2018</span><span class="topic">— 自动车道保持系统侧向控制功能安全</span></div>
+          <div class="alumni-item">马海涛<span class="year">2019</span><span class="topic">— 自动车道保持系统人机交互安全分析</span></div>
+          <div class="alumni-item">杜昕一<span class="year">2020</span><span class="topic">— 高速公路巡航系统预期功能安全</span></div>
+          <div class="alumni-item">俞瑞林<span class="year">2021</span><span class="topic">— 感知系统预期功能安全指标分解</span></div>
+          <div class="alumni-item">周乐<span class="year">2021</span><span class="topic">— 港口智能重卡定位模块预期功能安全</span></div>
+          <div class="alumni-item">张景恺<span class="year">2021</span><span class="topic">— 基于航测视频的自然驾驶数据集构建</span></div>
+          <div class="alumni-item">王璐瑶<span class="year">2021</span><span class="topic">— 交互场景下运动预测与规划一体化</span></div>
+          <div class="alumni-item">吕周杭<span class="year">2022</span><span class="topic">— 自动驾驶安全分析STPA</span></div>
+          <div class="alumni-item">王子煜<span class="year">2022</span><span class="topic">— 自动驾驶测试场景采集、HIL系统</span></div>
+          <div class="alumni-item">陈龙<span class="year">2022</span><span class="topic">— 港口智能重卡预期功能安全分析</span></div>
+          <div class="alumni-item">徐楚焱<span class="year">2022</span><span class="topic">— 基于事故数据的测试场景构建</span></div>
+        </div>
+        <div class="en-block">
+          <div class="alumni-item">Quanyue Cheng<span class="year">2018</span><span class="topic">— Functional safety of lateral control for ALKS</span></div>
+          <div class="alumni-item">Haitao Ma<span class="year">2019</span><span class="topic">— HMI safety analysis for ALKS</span></div>
+          <div class="alumni-item">Xinyi Du<span class="year">2020</span><span class="topic">— SOTIF for highway cruise systems</span></div>
+          <div class="alumni-item">Ruilin Yu<span class="year">2021</span><span class="topic">— SOTIF requirement decomposition for perception</span></div>
+          <div class="alumni-item">Le Zhou<span class="year">2021</span><span class="topic">— SOTIF of localization for port autonomous trucks</span></div>
+          <div class="alumni-item">Jingkai Zhang<span class="year">2021</span><span class="topic">— Naturalistic driving dataset from aerial video</span></div>
+          <div class="alumni-item">Luyao Wang<span class="year">2021</span><span class="topic">— Integrated motion prediction &amp; planning</span></div>
+          <div class="alumni-item">Zhouhang Lv<span class="year">2022</span><span class="topic">— STPA safety analysis for AD</span></div>
+          <div class="alumni-item">Ziyu Wang<span class="year">2022</span><span class="topic">— AD test scenario acquisition &amp; HIL</span></div>
+          <div class="alumni-item">Long Chen<span class="year">2022</span><span class="topic">— SOTIF for port autonomous trucks</span></div>
+          <div class="alumni-item">Chuyan Xu<span class="year">2022</span><span class="topic">— Test scenarios from accident data</span></div>
+        </div>
+      </div>
+
+      <!-- Undergraduate Thesis Alumni -->
+      <div class="alumni-group">
+        <div class="alumni-group-label">
+          <span class="cn">本科毕业设计</span><span class="en">Undergraduate Thesis</span>
+        </div>
+        <div class="cn-block">
+          <div class="alumni-item">俞瑞林<span class="year">2017</span><span class="topic">— 自动驾驶系统安全目标及安全关键时间研究</span></div>
+          <div class="alumni-item">王璐瑶<span class="year">2017</span><span class="topic">— 辅助驾驶车辆典型危害事件的可控性评估</span></div>
+          <div class="alumni-item">吴建峰<span class="year">2017</span><span class="topic">— 基于驾驶模拟与路采数据的加塞行为研究</span></div>
+          <div class="alumni-item">刘洪宇<span class="year">2018</span><span class="topic">— 基于人类驾驶员能力模型的HWP安全通过准则</span></div>
+          <div class="alumni-item">陈英豪<span class="year">2018</span><span class="topic">— 高速公路巡航系统感知安全风险分析</span></div>
+          <div class="alumni-item">陈鑫祥<span class="year">2018</span><span class="topic">— 载人火星车自主移动系统设计及安全概念</span></div>
+          <div class="alumni-item">孙庆松<span class="year">2019</span><span class="topic">— 基于航测与差分定位的自然交通场景采集</span></div>
+          <div class="alumni-item">鲍杰<span class="year">2019</span><span class="topic">— 车端与航测协同的关键安全场景构建</span></div>
+          <div class="alumni-item">张坤<span class="year">2019</span><span class="topic">— 基于第一视角与实车底盘的混合驾驶模拟</span></div>
+          <div class="alumni-item">吴林泽<span class="year">2019</span><span class="topic">— 基于充电网络的纯电动旅居车可行性分析</span></div>
+          <div class="alumni-item">邓瑾瑜<span class="year">2019</span><span class="topic">— 智能公交系统功能定义与架构建模</span></div>
+          <div class="alumni-item">牟禹铜<span class="year">2020</span><span class="topic">— 模块化空间探测车单体系统设计</span></div>
+          <div class="alumni-item">徐昊旻<span class="year">2020</span><span class="topic">— 模块化空间探测车并联行驶机构</span></div>
+          <div class="alumni-item">常吉<span class="year">2020</span><span class="topic">— 模块化空间探测车轮腿模式切换</span></div>
+          <div class="alumni-item">何昊晖<span class="year">2020</span><span class="topic">— 基于自然交通流的风险驾驶场景生成</span></div>
+          <div class="alumni-item">朱跃文<span class="year">2021</span><span class="topic">— 空地协同的自动驾驶安全边界测试</span></div>
+          <div class="alumni-item">陈冠宇<span class="year">2021</span><span class="topic">— 基于依维柯底盘的移动旅居工作空间</span></div>
+          <div class="alumni-item">孔张浩<span class="year">2021</span><span class="topic">— 冰雪驾驶场景数据集构建</span></div>
+          <div class="alumni-item">王嘉霖<span class="year">2021</span><span class="topic">— 基于网格化无人机的自动驾驶安全提升</span></div>
+        </div>
+        <div class="en-block">
+          <div class="alumni-item">Ruilin Yu<span class="year">2017</span><span class="topic">— Safety goals &amp; critical time for AD systems</span></div>
+          <div class="alumni-item">Luyao Wang<span class="year">2017</span><span class="topic">— Controllability assessment of ADAS hazards</span></div>
+          <div class="alumni-item">Jianfeng Wu<span class="year">2017</span><span class="topic">— Cut-in behavior from simulator &amp; road data</span></div>
+          <div class="alumni-item">Hongyu Liu<span class="year">2018</span><span class="topic">— HWP safety criteria from driver capability model</span></div>
+          <div class="alumni-item">Yinghao Chen<span class="year">2018</span><span class="topic">— Perception risk analysis for highway cruise</span></div>
+          <div class="alumni-item">Xinxiang Chen<span class="year">2018</span><span class="topic">— Manned Mars rover autonomous mobility &amp; safety</span></div>
+          <div class="alumni-item">Qingsong Sun<span class="year">2019</span><span class="topic">— Natural traffic scene acquisition via aerial+DGPS</span></div>
+          <div class="alumni-item">Jie Bao<span class="year">2019</span><span class="topic">— Vehicle-aerial cooperative safety scenarios</span></div>
+          <div class="alumni-item">Kun Zhang<span class="year">2019</span><span class="topic">— Hybrid driving simulation with 1st-person view</span></div>
+          <div class="alumni-item">Linze Wu<span class="year">2019</span><span class="topic">— EV camper feasibility on charging networks</span></div>
+          <div class="alumni-item">Jinyu Deng<span class="year">2019</span><span class="topic">— Smart bus system function &amp; architecture</span></div>
+          <div class="alumni-item">Yutong Mu<span class="year">2020</span><span class="topic">— Modular space rover single-unit design</span></div>
+          <div class="alumni-item">Haomin Xu<span class="year">2020</span><span class="topic">— Modular space rover parallel driving mechanism</span></div>
+          <div class="alumni-item">Ji Chang<span class="year">2020</span><span class="topic">— Modular rover wheel-leg mode switching</span></div>
+          <div class="alumni-item">Haohui He<span class="year">2020</span><span class="topic">— Risk driving scenario generation from traffic flow</span></div>
+          <div class="alumni-item">Yuewen Zhu<span class="year">2021</span><span class="topic">— Air-ground cooperative AD safety boundary testing</span></div>
+          <div class="alumni-item">Guanyu Chen<span class="year">2021</span><span class="topic">— Mobile camper on Iveco chassis</span></div>
+          <div class="alumni-item">Zhanghao Kong<span class="year">2021</span><span class="topic">— Ice &amp; snow driving scenario dataset</span></div>
+          <div class="alumni-item">Jialin Wang<span class="year">2021</span><span class="topic">— Grid-based UAV for AD safety enhancement</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collaborations -->
+  <section>
+    <h2 class="section-title">
+      <span class="cn">合作方</span>
+      <span class="en">Collaborations</span>
+    </h2>
+    <div class="partner-grid">
+      <a class="partner-card" href="https://www.zyt.com" target="_blank" rel="noopener">
+        <div class="partner-card-short">ZYT</div>
+        <div class="partner-card-full"><span class="cn">卓驭科技</span><span class="en">ZYT (formerly DJI Automotive)</span></div>
+      </a>
+      <a class="partner-card" href="https://www.nio.cn/" target="_blank" rel="noopener">
+        <div class="partner-card-short">NIO</div>
+        <div class="partner-card-full"><span class="cn">蔚来汽车</span><span class="en">NIO</span></div>
+      </a>
+      <a class="partner-card" href="https://www.saicmotor.com/" target="_blank" rel="noopener">
+        <div class="partner-card-short">SAIC</div>
+        <div class="partner-card-full"><span class="cn">上汽集团</span><span class="en">SAIC Motor</span></div>
+      </a>
+      <a class="partner-card" href="https://www.crsa.net/" target="_blank" rel="noopener">
+        <div class="partner-card-short"><span class="cn">道研中心</span><span class="en">RTSRC</span></div>
+        <div class="partner-card-full"><span class="cn">公安部道路交通安全研究中心</span><span class="en">Road Traffic Safety Research Center, MPS</span></div>
+      </a>
+      <a class="partner-card" href="https://www.catarc.ac.cn/" target="_blank" rel="noopener">
+        <div class="partner-card-short">CATARC</div>
+        <div class="partner-card-full"><span class="cn">中国汽车技术研究中心</span><span class="en">China Automotive Technology &amp; Research Center</span></div>
+      </a>
+      <a class="partner-card" href="https://www.nsfc.gov.cn/" target="_blank" rel="noopener">
+        <div class="partner-card-short">NSFC</div>
+        <div class="partner-card-full"><span class="cn">国家自然科学基金委员会</span><span class="en">National Natural Science Foundation of China</span></div>
+      </a>
+      <a class="partner-card" href="https://kjt.jl.gov.cn/" target="_blank" rel="noopener">
+        <div class="partner-card-short"><span class="cn">吉林省科技厅</span><span class="en">Jilin S&amp;T</span></div>
+        <div class="partner-card-full"><span class="cn">吉林省科学技术厅</span><span class="en">Jilin Provincial Dept. of S&amp;T</span></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Open-Source Projects -->
+  <section>
+    <h2 class="section-title">
+      <span class="cn">开源项目</span>
+      <span class="en">Open-Source Projects</span>
+    </h2>
+    <div class="project-grid">
+      <div class="project-card coming-soon">
+        <h3><span class="cn">项目 1</span><span class="en">Project 1</span></h3>
+        <p>Coming Soon</p>
+      </div>
+      <div class="project-card coming-soon">
+        <h3><span class="cn">项目 2</span><span class="en">Project 2</span></h3>
+        <p>Coming Soon</p>
+      </div>
+      <div class="project-card coming-soon">
+        <h3><span class="cn">项目 3</span><span class="en">Project 3</span></h3>
+        <p>Coming Soon</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Selected Publications -->
+  <section>
+    <h2 class="section-title">
+      <span class="cn">代表性成果</span>
+      <span class="en">Selected Publications</span>
+    </h2>
+    <ol class="pub-list" style="list-style: none; padding: 0;">
+      <li>
+        <span class="pub-num">1.</span>
+        <span class="pub-year">2025</span>
+        Yu, R., Wang, C., Zhang, Y., &amp; Zhao, F. "Decomposition and Quantification of SOTIF Requirements for Perception Systems." <span class="pub-journal">IEEE T-ITS</span>.
+      </li>
+      <li>
+        <span class="pub-num">2.</span>
+        <span class="pub-year">2024</span>
+        Wang, C. et al. "The Application of Driver Models in the Safety Assessment of Autonomous Vehicles." <span class="pub-journal">IEEE T-IV</span>, 9(1): 2364-2381.
+      </li>
+      <li>
+        <span class="pub-num">3.</span>
+        <span class="pub-year">2023</span>
+        Zhang, Y. et al. "The AD4CHE Dataset and Its Application in Typical Congestion Scenarios." <span class="pub-journal">IEEE T-IV</span>, 8(5): 3312-3323.
+      </li>
+      <li>
+        <span class="pub-num">4.</span>
+        <span class="pub-year">2022</span>
+        <span class="cn">邵文博, 李骏, 张玉新, 王红. "智能汽车预期功能安全保障关键技术."</span><span class="en">Shao, W., Li, J., Zhang, Y., Wang, H. "Key Technologies for SOTIF Assurance of Intelligent Vehicles."</span> <span class="pub-journal"><span class="cn">汽车工程</span><span class="en">Automotive Engineering</span></span>, 44(9): 1289-1304.
+      </li>
+    </ol>
+    <div class="pub-links">
+      <a class="link-item" href="https://scholar.google.com.au/citations?user=W8YoarEAAAAJ&hl=en" target="_blank" rel="noopener">
+        Google Scholar →
+      </a>
+      <a class="link-item" href="https://auto.jlu.edu.cn/info/1318/3221.htm" target="_blank" rel="noopener">
+        <span class="cn">吉林大学教师主页 →</span>
+        <span class="en">JLU Faculty Page →</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Back to Main -->
+  <section style="text-align: center; border-bottom: none;">
+    <a class="btn btn-outline" href="https://autozyx.com">
+      ← <span class="cn">返回主页</span><span class="en">Back to Home</span>
+    </a>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <p>
+      <span class="cn">&copy; 2026 张玉新 | 自动驾驶安全联合实验室 | Powered by Cloudflare Pages</span>
+      <span class="en">&copy; 2026 Yuxin Zhang | AD Safety Joint Lab | Powered by Cloudflare Pages</span>
+    </p>
+  </div>
+</footer>
+
+<script>
+function toggleLang(){
+  var isE = document.body.classList.toggle('E');
+  document.getElementById('langBtn').textContent = isE ? '中文' : 'EN';
+  localStorage.setItem('azlang', isE ? 'E' : 'C');
+}
+(function(){
+  var s = localStorage.getItem('azlang');
+  if(s === 'E'){
+    document.body.classList.add('E');
+    document.getElementById('langBtn').textContent = '中文';
+  }
+})();
+</script>
+</body>
+</html>
