@@ -883,6 +883,12 @@ footer {
 .pi-card .pi-info a {
   font-size: 0.9rem;
   font-weight: 500;
+  color: var(--accent);
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+.pi-card .pi-info a:hover {
+  opacity: 0.7;
 }
 .people-grid {
   display: grid;
