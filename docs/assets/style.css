@@ -377,12 +377,12 @@ footer {
 /* --- Lab Page Specifics --- */
 .lab-header {
   text-align: center;
-  padding: 48px 0 40px;
+  padding: 48px 24px 40px;
   border-bottom: 1px solid var(--border);
 }
 
 .lab-logo {
-  max-width: 420px;
+  max-width: 720px;
   width: 100%;
   height: auto;
   display: block;
