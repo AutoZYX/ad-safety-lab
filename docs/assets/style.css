@@ -1072,7 +1072,7 @@ a.person-card:hover .person-name {
 }
 .lab-nav-links a {
   color: var(--text);
-  font-size: 0.9rem;
+  font-size: 1.05rem;
   font-weight: 500;
   opacity: 0.7;
   transition: opacity 0.2s;
