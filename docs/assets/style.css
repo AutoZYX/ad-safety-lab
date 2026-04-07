@@ -1039,3 +1039,64 @@ a.person-card:hover .person-name {
   .partner-grid { grid-template-columns: 1fr; }
   .pi-card { flex-direction: column; text-align: center; }
 }
+
+/* ===== Lab Navigation Bar ===== */
+.lab-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
+  background: var(--card-bg);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+.lab-nav-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+.lab-nav-logo-img {
+  height: 40px;
+  width: auto;
+}
+.lab-nav-links {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+  align-items: center;
+}
+.lab-nav-links a {
+  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: 500;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+.lab-nav-links a:hover {
+  opacity: 1;
+  color: var(--accent);
+}
+.lab-lang-switch a {
+  display: inline-block;
+  padding: 4px 14px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text);
+}
+.lab-lang-switch a:hover {
+  background: var(--badge-bg);
+}
+
+@media (max-width: 768px) {
+  .lab-nav-links { gap: 14px; }
+  .lab-nav-links a { font-size: 0.82rem; }
+  .lab-nav-logo-img { height: 32px; }
+  .lab-nav-inner { height: 56px; }
+}
