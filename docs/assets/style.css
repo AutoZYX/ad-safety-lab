@@ -1097,9 +1097,77 @@ a.person-card:hover .person-name {
   background: var(--badge-bg);
 }
 
+/* Hamburger toggle button - hidden on desktop */
+.lab-nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+.lab-nav-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--text);
+  border-radius: 1px;
+}
+
+/* Mobile: hamburger menu */
 @media (max-width: 768px) {
-  .lab-nav-links { gap: 14px; }
-  .lab-nav-links a { font-size: 0.82rem; }
-  .lab-nav-logo-img { height: 32px; }
+  .lab-nav-toggle { display: flex; }
+  .lab-nav-links {
+    display: none;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: var(--card-bg);
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    flex-direction: column;
+    padding: 16px 24px;
+    gap: 12px;
+  }
+  .lab-nav-links.open { display: flex; }
+  .lab-nav-links a { font-size: 1rem; }
+  .lab-nav-logo-img { height: 36px; }
   .lab-nav-inner { height: 56px; }
+
+  /* Lab header logo wall */
+  .lab-logo { max-width: 100%; }
+
+  /* PI card */
+  .pi-card { flex-direction: column; text-align: center; gap: 16px; }
+  .pi-card .avatar-large { width: 100px; height: 100px; }
+
+  /* Card grid to single column */
+  .card-grid { grid-template-columns: 1fr; }
+
+  /* Project grid to single column */
+  .project-grid { grid-template-columns: 1fr; }
+
+  /* Partner grid */
+  .partner-grid { grid-template-columns: repeat(2, 1fr); }
+
+  /* People grid */
+  .people-grid { grid-template-columns: repeat(2, 1fr); }
+  .student-grid { grid-template-columns: repeat(3, 1fr); }
+
+  /* Pub list */
+  .pub-list li { font-size: 0.9rem; }
+
+  /* About text */
+  .about-text p { font-size: 0.95rem; }
+}
+
+@media (max-width: 480px) {
+  .lab-nav-logo-img { height: 30px; }
+  .partner-grid { grid-template-columns: 1fr; }
+  .people-grid { grid-template-columns: repeat(2, 1fr); }
+  .student-grid { grid-template-columns: repeat(2, 1fr); }
+  .pub-list li { font-size: 0.85rem; }
+  .pub-links { flex-direction: column; gap: 8px; }
 }
